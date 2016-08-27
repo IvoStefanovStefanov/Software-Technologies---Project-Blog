@@ -9,6 +9,8 @@ namespace Biliana_Georgieva_Blog.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<H2HPost> H2HPosts { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

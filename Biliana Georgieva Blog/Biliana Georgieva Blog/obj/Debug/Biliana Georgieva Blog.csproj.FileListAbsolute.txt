@@ -79,3 +79,4 @@ D:\SoftUni\TechModul\Software technologies\Project\Software-Technologies---Proje
 D:\SoftUni\TechModul\Software technologies\Project\Software-Technologies---Project-Blog\Biliana Georgieva Blog\Biliana Georgieva Blog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\SoftUni\TechModul\Software technologies\Project\Software-Technologies---Project-Blog\Biliana Georgieva Blog\Biliana Georgieva Blog\obj\Debug\Biliana Georgieva Blog.dll
 D:\SoftUni\TechModul\Software technologies\Project\Software-Technologies---Project-Blog\Biliana Georgieva Blog\Biliana Georgieva Blog\obj\Debug\Biliana Georgieva Blog.pdb
+D:\SoftUni\TechModul\Software technologies\Project\Software-Technologies---Project-Blog\Biliana Georgieva Blog\Biliana Georgieva Blog\obj\Debug\Biliana Georgieva Blog.csprojResolveAssemblyReference.cache
