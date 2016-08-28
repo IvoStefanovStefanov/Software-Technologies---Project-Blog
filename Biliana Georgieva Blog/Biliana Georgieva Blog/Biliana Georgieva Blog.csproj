@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\H2HCommentController.cs" />
     <Compile Include="Controllers\H2HPostController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -205,6 +206,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\H2HComment.cs" />
     <Compile Include="Models\H2HPost.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -276,6 +278,11 @@
     <Content Include="Views\H2HPost\Details.cshtml" />
     <Content Include="Views\H2HPost\Edit.cshtml" />
     <Content Include="Views\H2HPost\Index.cshtml" />
+    <Content Include="Views\H2HComment\Create.cshtml" />
+    <Content Include="Views\H2HComment\Delete.cshtml" />
+    <Content Include="Views\H2HComment\Details.cshtml" />
+    <Content Include="Views\H2HComment\Edit.cshtml" />
+    <Content Include="Views\H2HComment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

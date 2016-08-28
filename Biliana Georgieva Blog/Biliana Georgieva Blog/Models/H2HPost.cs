@@ -26,5 +26,7 @@ namespace Biliana_Georgieva_Blog.Models
         public DateTime Date { get; set; }
 
         public ApplicationUser Author { get; set; }
+
+        public ICollection<H2HComment> H2HComments { get; set; }
     }
 }

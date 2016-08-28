@@ -46,7 +46,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Body,Date")] H2HPost h2HPost)
+        public ActionResult Create([Bind(Include = "Id,Title,Body")] H2HPost h2HPost)
         {
             if (ModelState.IsValid)
             {
