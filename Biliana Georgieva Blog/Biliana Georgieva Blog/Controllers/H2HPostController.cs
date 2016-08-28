@@ -36,6 +36,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         }
 
         // GET: H2HPost/Create
+        [Authorize(Roles ="Administrators")]
         public ActionResult Create()
         {
             return View();
@@ -46,6 +47,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrators")]
         public ActionResult Create([Bind(Include = "Id,Title,Body")] H2HPost h2HPost)
         {
             if (ModelState.IsValid)
@@ -59,6 +61,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         }
 
         // GET: H2HPost/Edit/5
+        [Authorize(Roles = "Administrators")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -78,6 +81,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrators")]
         public ActionResult Edit([Bind(Include = "Id,Title,Body,Date")] H2HPost h2HPost)
         {
             if (ModelState.IsValid)
@@ -90,6 +94,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         }
 
         // GET: H2HPost/Delete/5
+        [Authorize(Roles = "Administrators")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -107,6 +112,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         // POST: H2HPost/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrators")]
         public ActionResult DeleteConfirmed(int id)
         {
             H2HPost h2HPost = db.H2HPosts.Find(id);
