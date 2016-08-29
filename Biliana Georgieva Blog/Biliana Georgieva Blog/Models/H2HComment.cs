@@ -12,8 +12,11 @@ namespace Biliana_Georgieva_Blog.Models
         {
             this.Date = DateTime.Now;
         }
+        [Required]
         public int Id { get; set; }
 
+       [Required]
+        [DataType(DataType.MultilineText)]
         public string Text { get; set; }
 
         [Required]

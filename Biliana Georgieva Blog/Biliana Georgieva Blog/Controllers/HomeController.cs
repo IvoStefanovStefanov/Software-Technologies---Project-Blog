@@ -20,15 +20,6 @@ namespace Biliana_Georgieva_Blog.Controllers
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-        public ActionResult H2HPost()
-        {
-          return View();
-        }
+       
     }
 }
