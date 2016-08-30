@@ -22,6 +22,7 @@ namespace Biliana_Georgieva_Blog.Models
         [Required]
         public DateTime Date { get; set; }
 
+      // [Required]
         public ApplicationUser Author { get; set; }
 
        public WrittenConv WrittenConv { get; set; }

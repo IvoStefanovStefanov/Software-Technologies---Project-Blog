@@ -5,7 +5,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>H2H</h2>
 
 <p>
             @if (User.Identity.IsAuthenticated)
@@ -43,21 +43,15 @@
         </td>
         <td>
             @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-            @Html.ActionLink("View Comments", "Index", "H2HComment")
+            @Html.ActionLink("View Comments", "Index", "H2HComment") |
             @if (User.Identity.IsAuthenticated)
             {
                 if (User.IsInRole("Administrators"))
                 {
                     @Html.ActionLink("Edit", "Edit", new { id = item.Id }) @:|
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) @:|
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }) @:|
-                    @Html.ActionLink("View Comments", "Index", "H2HComment")
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }) 
+                    
                 }
-               // else
-                //{
-               //     @Html.ActionLink("Details", "Details", new { id = item.Id }) @:|
-              //      @Html.ActionLink("View Comments", "Index", "H2HComment")
-             //   }
             }
         </td>
     </tr>

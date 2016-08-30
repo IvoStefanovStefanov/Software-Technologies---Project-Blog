@@ -82,7 +82,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Administrators")]
-        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date")] WrittenConv writtenConv)
+        public ActionResult Edit([Bind(Include = "Id,Title,Body")] WrittenConv writtenConv)
         {
             if (ModelState.IsValid)
             {

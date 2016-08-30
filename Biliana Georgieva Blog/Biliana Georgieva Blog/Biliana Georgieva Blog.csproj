@@ -197,6 +197,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Classes\Utils.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArtPostController.cs" />
     <Compile Include="Controllers\H2HCommentController.cs" />
     <Compile Include="Controllers\H2HPostController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -297,9 +298,13 @@
     <Content Include="Views\WrittenConvComment\Details.cshtml" />
     <Content Include="Views\WrittenConvComment\Edit.cshtml" />
     <Content Include="Views\WrittenConvComment\Index.cshtml" />
+    <Content Include="Views\ArtPost\Index.cshtml" />
+    <Content Include="Views\ArtPost\Upload.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Pictures\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

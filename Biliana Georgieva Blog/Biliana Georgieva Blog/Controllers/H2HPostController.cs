@@ -82,7 +82,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Administrators")]
-        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date")] H2HPost h2HPost)
+        public ActionResult Edit([Bind(Include = "Id,Title,Body")] H2HPost h2HPost)
         {
             if (ModelState.IsValid)
             {
