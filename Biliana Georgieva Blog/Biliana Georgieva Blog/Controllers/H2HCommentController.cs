@@ -17,7 +17,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         // GET: H2HComment
         public ActionResult Index()
         {
-            return View(db.H2HComments.ToList());
+            return View(db.H2HComments.Include(p => p.Author).ToList());
         }
 
         // GET: H2HComment/Details/5

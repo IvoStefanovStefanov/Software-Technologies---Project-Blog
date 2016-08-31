@@ -10,10 +10,9 @@
 <p>
 @if (User.Identity.IsAuthenticated)
 {
-    if (User.IsInRole("Administrators"))
-    {
+    
     @Html.ActionLink("Create New", "Create")
-    }
+    
 }
 </p>
 <table class="table">
@@ -21,8 +20,12 @@
         <th>
             @Html.DisplayNameFor(model => model.Text)
         </th>
-        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+       
     </tr>
+   
 
 @foreach (var item in Model)
 {
@@ -30,6 +33,10 @@
     <td>
         @Utils.CutText(item.Text)
    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Date)
+    </td>
+  
 <td>
     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
     @if (User.Identity.IsAuthenticated)

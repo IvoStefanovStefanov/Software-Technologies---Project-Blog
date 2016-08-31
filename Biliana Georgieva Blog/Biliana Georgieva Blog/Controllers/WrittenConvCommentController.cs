@@ -17,7 +17,7 @@ namespace Biliana_Georgieva_Blog.Controllers
         // GET: WrittenConvComment
         public ActionResult Index()
         {
-            return View(db.WrittenConvComments.ToList());
+            return View(db.WrittenConvComments.Include(p => p.Author).ToList());
         }
 
         // GET: WrittenConvComment/Details/5
